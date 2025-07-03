@@ -1,0 +1,27 @@
+/* 👉 If you want JetBrains Mono for dev headings */
+@import "@fontsource/jetbrains-mono/index.css";
+
+/* 👉 If you want Poppins for body (if not via CDN, install it too) */
+@import "@fontsource/poppins/index.css";
+
+/* 👉 Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 👉 Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000; /* black background */
+  color: #fff;            /* white text */
+}
+
+/* 👉 Use JetBrains Mono for headings (optional) */
+h1, h2, h3 {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* 👉 Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
