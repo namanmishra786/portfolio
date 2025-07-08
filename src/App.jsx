@@ -1,68 +1,37 @@
-import { toast } from 'react-hot-toast';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import BottomNav from "./components/BottomNav";
+import Skills from "./components/Skills";
+import Freelance from "./components/Freelance";
+import TechStack from "./components/TechStack";
+import Blog from "./components/Blog";
+import Now from "./components/Now";
 
-export default function Contact() {
+// ✅ Add this!
+import { Toaster } from "react-hot-toast";
+
+export default function App() {
   return (
-    <section id="contact" className="px-8 py-24 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-        Let’s Connect
-      </h2>
-      <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-        Got an idea, project, or just want to say hi?  
-        I’m open for freelance work, collaborations, or a quick tech chat.
-      </p>
+    <div className="min-h-screen bg-black flex items-center justify-center p-6 font-sans text-white">
+      <div className="w-full max-w-5xl bg-white/5 backdrop-blur-lg rounded-3xl shadow-xl overflow-hidden border border-white/10">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Freelance />
+        <TechStack />
+        <Blog />
+        <Now />
+        <Contact />
+        <BottomNav />
+      </div>
 
-      <form
-        action="https://formspree.io/f/xgvyjkjq"
-        method="POST"
-        className="max-w-xl mx-auto text-left space-y-4"
-        onSubmit={() => toast.success("Message sent! 🚀")}
-      >
-        <div>
-          <label htmlFor="name" className="block text-sm mb-1 text-gray-300">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg backdrop-blur focus:outline-none focus:ring-2 focus:ring-cyan-400"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="email" className="block text-sm mb-1 text-gray-300">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg backdrop-blur focus:outline-none focus:ring-2 focus:ring-cyan-400"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="message" className="block text-sm mb-1 text-gray-300">
-            Message
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            rows="4"
-            required
-            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg backdrop-blur focus:outline-none focus:ring-2 focus:ring-cyan-400"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          className="inline-block px-6 py-3 border border-cyan-400 text-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition font-medium"
-        >
-          ✉️ Send Message
-        </button>
-      </form>
-    </section>
+      {/* ✅ Add the toaster at the end */}
+      <Toaster position="top-center" reverseOrder={false} />
+    </div>
   );
 }

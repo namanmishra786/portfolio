@@ -1,3 +1,5 @@
+import { toast } from 'react-hot-toast';
+
 export default function Contact() {
   return (
     <section id="contact" className="px-8 py-24 text-center">
@@ -13,6 +15,7 @@ export default function Contact() {
         action="https://formspree.io/f/xgvyjkjq"
         method="POST"
         className="max-w-xl mx-auto text-left space-y-4"
+        onSubmit={() => toast.success("Message sent! 🚀")}
       >
         <div>
           <label htmlFor="name" className="block text-sm mb-1 text-gray-300">
