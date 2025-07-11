@@ -88,9 +88,10 @@ cd your-portfolio</code></pre>
 
 <p>
   If you'd like to collaborate, hire me, or just say hello:<br/>
-  <strong>Email:</strong> your-email@example.com<br/>
-  <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-linkedin">Your LinkedIn</a><br/>
-  <strong>Live Demo:</strong> <a href="https://your-portfolio-url.com">Visit Portfolio</a>
+  <strong>Email:</strong>namanmishra786cool@gmail.com<br/>
+  <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/naman-mishra-5386a9227/">Your LinkedIn</a><br/>
+  <strong>Live Demo:</strong> <a href="namanmishra786.vercel.app
+">Visit Portfolio</a>
 </p>
 
 <hr/>
